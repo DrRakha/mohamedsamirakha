@@ -14,7 +14,7 @@ Our results show that: (i) More than 50% of the duplicate reports are identified
  Factors that capture the developer awareness of the duplicate issue's peers (i.e., other duplicates of that issue) and textual similarity of a new report to prior reports are the most  influential factors in our models.
 Our findings highlight the need for effort-aware evaluation of approaches that identify duplicate issue reports, since the identification of a considerable amount of duplicate reports (over 50%) appear to be a relatively trivial task for developers. To better assist developers, research on identifying duplicate issue reports should put greater emphasis on assisting developers in identifying effort-consuming duplicate issues.
 
-[PDF](files/EMSE2015_Rakha.pdf)
+[Paper PDF](files/EMSE2015_Rakha.pdf)
 
 Recommended citation: Mohamed Sami Rakha, Weiyi Shang, and
 Ahmed E.Hassan.  (2015). "Studying the Needed Effort for Identifying Duplicate Issues." <i>Empirical Software Engineering</i>. 1(2).

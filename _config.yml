@@ -187,7 +187,7 @@ collections:
 defaults:
   # _posts
   - scope:
-      path: "/publications"
+      path: ""
       type: posts
     values:
       layout: single

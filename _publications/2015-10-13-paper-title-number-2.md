@@ -5,7 +5,7 @@ permalink: /publication/2015-Studying_the_Needed_Effort_for_Identifying_Duplicat
 excerpt: 'Techniques used: Textual Similarity, Random Forest Models,  Scott-Knott,  Statistical Analysis and Quantile Regression.'
 date: 2015-10-13
 venue: 'Empirical Software Engineering'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
+paperurl: ''
 citation: 'Mohamed Sami Rakha, Weiyi Shang, and
 Ahmed E.Hassan.  (2015). &quot;Studying the Needed Effort for Identifying Duplicate Issues &quot; <i>Empirical Software Engineering</i>. 1(2).'
 ---
@@ -14,7 +14,7 @@ Our results show that: (i) More than 50% of the duplicate reports are identified
  Factors that capture the developer awareness of the duplicate issue's peers (i.e., other duplicates of that issue) and textual similarity of a new report to prior reports are the most  influential factors in our models.
 Our findings highlight the need for effort-aware evaluation of approaches that identify duplicate issue reports, since the identification of a considerable amount of duplicate reports (over 50%) appear to be a relatively trivial task for developers. To better assist developers, research on identifying duplicate issue reports should put greater emphasis on assisting developers in identifying effort-consuming duplicate issues.
 
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
+[PDF](files/EMSE2015_Rakha.pdf)
 
 Recommended citation: Mohamed Sami Rakha, Weiyi Shang, and
 Ahmed E.Hassan.  (2015). "Studying the Needed Effort for Identifying Duplicate Issues." <i>Empirical Software Engineering</i>. 1(2).

@@ -1,7 +1,7 @@
 ---
 title: "Automatic Image Annotation Approach Based on Optimization of Classes Scores"
 collection: publications
-permalink: /publication/2009-10-01-Automatic_Image_Annotation_Approach_Based_on_Optimization_of_Classes_Scores
+permalink: /publication/2009_10_01_Automatic_Image_Annotation_Approach_Based_on_Optimization_of_Classes_Scores
 excerpt: 'Techniques used: Visual Features Extraction, Image Segmentation, Particle Swarm Optimization and Random Forest Models.'
 date: 2013-8-01
 venue: 'Computing'

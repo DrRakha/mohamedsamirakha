@@ -5,7 +5,7 @@ permalink: /publication/2017-9-20-Revisiting_the_Performance_Evaluation_of_Autom
 excerpt: 'Techniques used: Information Retrieval, Genetic Algorithms, Statistical Analysis and Analysis Visualization.'
 date: 2017-9-20
 venue: 'IEEE Transactions of Software Engineering'
-paperurl: ''
+paperurl: '/files/TSE-2016-05-0151.pdf'
 citation: 'Mohamed Sami Rakha, Cor-Paul Bezemer, and
 Ahmed E.Hassan. (2017). &quot; Revisiting the Performance Evaluation of Automated Approaches for the Retrieval of Duplicate Issue Reports .&quot; <i>IEEE Transactions of Software Engineering</i>.'
 ---

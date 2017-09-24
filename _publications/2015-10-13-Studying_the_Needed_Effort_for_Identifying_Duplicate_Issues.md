@@ -17,4 +17,4 @@ Our findings highlight the need for effort-aware evaluation of approaches that i
 [Paper PDF](files/EMSE2015_Rakha.pdf)
 
 Recommended citation: Mohamed Sami Rakha, Weiyi Shang, and
-Ahmed E.Hassan.  (2015). "Studying the Needed Effort for Identifying Duplicate Issues." <i>Empirical Software Engineering</i>. 1(2).
+Ahmed E.Hassan.  (2015). "Studying the Needed Effort for Identifying Duplicate Issues." <i>Empirical Software Engineering</i>.

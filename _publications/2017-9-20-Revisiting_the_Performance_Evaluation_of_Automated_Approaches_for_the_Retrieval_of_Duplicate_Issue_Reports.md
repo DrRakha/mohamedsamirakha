@@ -14,4 +14,4 @@ Issue tracking systems (ITSs), such as Bugzilla, are commonly used to track repo
 [Paper PDF](/files/TSE-2016-05-0151.pdf)
 
 Recommended citation: Mohamed Sami Rakha, Cor-Paul Bezemer, and
-Ahmed E.Hassan. (2017). &quot; Revisiting the Performance Evaluation of Automated Approaches for the Retrieval of Duplicate Issue Reports .&quot; <i>IEEE Transactions of Software Engineering</i>. 1(3).
+Ahmed E.Hassan. (2017). &quot; Revisiting the Performance Evaluation of Automated Approaches for the Retrieval of Duplicate Issue Reports .&quot; <i>IEEE Transactions of Software Engineering</i>.

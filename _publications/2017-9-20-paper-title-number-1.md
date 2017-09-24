@@ -1,7 +1,7 @@
 ---
 title: "Revisiting the Performance Evaluation of Automated Approaches for the Retrieval of Duplicate Issue Reports"
 collection: publications
-permalink: /publication/2017-9-20-paper-title-number-3
+permalink: /publication/2017-9-20-Revisiting_the_Performance_Evaluation_of_Automated_Approaches_for_the_Retrieval_of_Duplicate_Issue_Reports
 excerpt: 'Techniques used: Information Retrieval, Genetic Algorithms, Statistical Analysis and Analysis Visualization.'
 date: 2017-9-20
 venue: 'IEEE Transactions of Software Engineering'

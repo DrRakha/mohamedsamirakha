@@ -7,5 +7,5 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Thank you for visiting my personal web-page. My name is Mohamed Sami Rakha. You can just call me Sami . Currently, I am a Ph.D. Candidate at School of Computing – Queen’s University. I have interest in software development, machine learning, data mining, and data visualization. You can take some time to view my publications. Please do not hesitate to contact to me in case of any question or replication data required. 
+Thank you for visiting my personal web-page. My name is Mohamed Sami Rakha. Currently, I am a Ph.D. Candidate at School of Computing – Queen’s University. I have interest in software development, machine learning, data mining, and data visualization. You can take some time to view my publications. Please do not hesitate to contact to me in case of any question or replication data required. 
  

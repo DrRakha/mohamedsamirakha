@@ -2,9 +2,9 @@
 title: "Revisiting the Performance Evaluation of Automated Approaches for the Retrieval of Duplicate Issue Reports"
 collection: publications
 permalink: /publication/2017-9-20-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
+excerpt: 'Techniques used: Information Retrieval, Genetic Algorithms, Statistical Analysis and Analysis Visualization.'
+date: 2017-9-20
+venue: 'IEEE Transactions of Software Engineering'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 citation: 'Mohamed Sami Rakha, Cor-Paul Bezemer, and
 Ahmed E.Hassan. (2017). &quot; Revisiting the Performance Evaluation of Automated Approaches for the Retrieval of Duplicate Issue Reports 3.&quot; <i>IEEE Transactions of Software Engineering</i>. 1(3).'

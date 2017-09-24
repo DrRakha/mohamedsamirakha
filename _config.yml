@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Hey there! Welcome to my personal site"
+title                    : "Master Site?"
 title_separator          : "-"
 name                     : &name "Mohamed Sami Rakha"
 description              : &description "Ph.D Candidate at Queen's"

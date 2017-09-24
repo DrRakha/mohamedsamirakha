@@ -2,7 +2,7 @@
 title: "Studying the Needed Effort for Identifying Duplicate Issues"
 collection: publications
 permalink: /publication/2015-10-05-Studying the Needed Effort for Identifying Duplicate Issues
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
+excerpt: 'Techniques used: Textual Similarity, Random Forest Models,  Scott-Knott,  Statistical Analysis and Quantile Regression.'
 date: 2015-10-05
 venue: 'Empirical Software Engineering'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'

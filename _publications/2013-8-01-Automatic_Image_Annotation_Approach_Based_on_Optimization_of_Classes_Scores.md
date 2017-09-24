@@ -12,4 +12,4 @@ This article presents an automatic image level annotation approach that takes ad
 
 [Download From Springer](https://link.springer.com/article/10.1007/s00607-013-0342-0)
 
-Recommended citation: Nashwa El-Bendary, Tai-hoon Kim, Aboul Ella Hassanien and Mohamed Sami. (2013). "Paper Title Number 1." <i>Computing</i>.
+Recommended citation: Nashwa El-Bendary, Tai-hoon Kim, Aboul Ella Hassanien and Mohamed Sami. (2013). "Automatic Image Annotation Approach Based on Optimization of Classes Scores." <i>Computing</i>.

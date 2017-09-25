@@ -6,10 +6,12 @@ excerpt: 'Techniques used: Visual Features Extraction, Clustering, Image Segment
 date: 2012-09-01
 venue: 'Federated Conference on Computer Science  and Information Systems'
 paperurl: 
-citation: 'Mohamed Sami, Nashwa El-Bendary,  Aboul Ella Hassanien and Robert C. Berwick. (2012). &quot; 
-Incorporating Random Forest Trees with Particle Swarm Optimization for Automatic Image Annotation
-.&quot; <i>Federated Conference on Computer Science  and Information Systems</i>.'
+citation: 'Mohamed Sami, Nashwa El-Bendary,  Aboul Ella Hassanien and Robert C Berwick (2012). 
+&quot; Incorporating Random Forest Trees with Particle Swarm Optimization for Automatic Image Annotation.
+&quot; <i>Federated Conference on Computer Science and Information Systems</i>.'
+
 ---
+
 This paper presents an automatic image annotation approach that integrates the random forest classifier with particle swarm optimization 
 algorithm for classes' scores weighting. The proposed hybrid approach refines the output of multi-class classification that is based on 
 the usage of random forest classifier for automatically labeling images with a number of words. Each input image is segmented using the 

@@ -9,7 +9,6 @@ paperurl:
 citation: 'Mohamed Sami, Nashwa El-Bendary,  Aboul Ella Hassanien and Robert C Berwick (2012). 
 &quot; Incorporating Random Forest Trees with Particle Swarm Optimization for Automatic Image Annotation.
 &quot; <i>Federated Conference on Computer Science and Information Systems</i>.'
-
 ---
 
 This paper presents an automatic image annotation approach that integrates the random forest classifier with particle swarm optimization 

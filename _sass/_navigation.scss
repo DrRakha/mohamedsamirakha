@@ -83,7 +83,7 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: mix(#fff, $gray, 25%);
+      color: mix(#52adc8, $gray, 25%);
       border: 1px solid $light-gray;
       border-radius: 0;
 
@@ -97,7 +97,7 @@
       }
 
       &.disabled {
-        color: mix(#fff, $gray, 75%);
+        color: mix(#f00, $gray, 75%);
         pointer-events: none;
         cursor: not-allowed;
       }
@@ -181,7 +181,7 @@
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: $masthead-link-color;
+    color: #52adc8;
     text-decoration: none;
 
     &:hover {

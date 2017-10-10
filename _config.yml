@@ -11,9 +11,9 @@ title                    : "Mohamed Sami Rakha"
 title_separator          : "-"
 name                     : &name "Mohamed Sami Rakha"
 description              : &description "Ph.D. Candidate at Queens"
-url                      : "https://codemiles.github.io/mohamedsamirakha/"   
+url                      : "https://mohamedsamirakha.github.io"   
 baseurl                  : ""  
-repository               : "codemiles.github.io/mohamedsamirakha/"
+repository               : "mohamedsamirakha/codemiles.github.io"
 teaser                   :   
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160

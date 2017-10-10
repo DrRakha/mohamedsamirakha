@@ -7,14 +7,14 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Master Site?"
+title                    : "Mohamed Sami Rakha"
 title_separator          : "-"
 name                     : &name "Mohamed Sami Rakha"
-description              : &description "Ph.D.  Candidate at Queens"
-url                      : http://mohamedsamirakha.info
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+description              : &description "Ph.D. Candidate at Queens"
+url                      : "http://mohamedsamirakha.info"   
+baseurl                  : ""  
 repository               : "mohamedsamirakha.github.io"
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   :   
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
@@ -78,13 +78,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Sami"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  name             : "Ph.D.  Candidate Mohamed Sami Rakha"
+  avatar           : "rakhainfo.png"
+  bio              : "Areas of Interest: Software Development, Machine Learning, Data Mining and Analysis"
+  location         : "Canada, Ontario"
   employer         :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  googlescholar    : "https://scholar.google.ca/citations?user=YrEOxbIAAAAJ&hl=en"
+  email            : "codemiles@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -92,19 +92,19 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "mohamedsamirakha"
+  github           :  
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            :  
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : "codemiles"
   vine             :
   weibo            :
   xing             :
@@ -249,7 +249,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Canada/Eastern # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

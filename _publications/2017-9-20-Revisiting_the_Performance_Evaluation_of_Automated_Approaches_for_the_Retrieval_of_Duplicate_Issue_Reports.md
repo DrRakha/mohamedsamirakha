@@ -6,6 +6,9 @@ excerpt: 'Techniques used: Information Retrieval, Genetic Algorithms, Statistica
 date: 2017-9-20
 venue: 'IEEE Transactions of Software Engineering'
 paperurl: ''
+tags:
+  - TSE
+  - 2017
 citation: 'Mohamed Sami Rakha, Cor-Paul Bezemer, and
 Ahmed E.Hassan. (2017). &quot; Revisiting the Performance Evaluation of Automated Approaches for the Retrieval of Duplicate Issue Reports .&quot; <i>IEEE Transactions of Software Engineering</i>.'
 ---

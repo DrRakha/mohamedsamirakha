@@ -1,5 +1,5 @@
-## MapReduce Demo - Helloworld
-## Credits: M. S. Rakha, Ph.D., Queen’s University, CISC/CMPE 432
+# MapReduce Demo - Helloworld
+# Credits: M. S. Rakha, Ph.D., Queen’s University, CISC/CMPE 432
 # HortonWorks SandBox with HDP 2.6.4
 # Connect SSH IP Port=2222 (Using putty)
 # Switch to root
@@ -8,6 +8,10 @@
 #pip install mrjob==0.5.11
 #yum install nano [editor] optional
 #data1: wget http://mohamedsamirakha.info/cisc432/ratings.dat
+#MapReduce1 wget http://mohamedsamirakha.info/cisc432/mapReduce1.py
+#Run on hadoop
+#test if it is working locally: python 
+#python mapReduce1.py -r hadoop --hadoop-streaming-jar/usr/hdp/current/hadoop-mapreduce-clienthadoop-streaming.jar rating.dat
 from mrjob.job import MRJob 
 from mrjob.step import MRStep
 

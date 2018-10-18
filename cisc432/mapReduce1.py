@@ -1,5 +1,5 @@
 # MapReduce Demo - Helloworld
-# Credits: M. S. Rakha, Ph.D., Queen’s University, CISC/CMPE 432
+# Credits: M. S. Rakha, Ph.D., Queen\'s University, CISC/CMPE 432
 # HortonWorks SandBox with HDP 2.6.4
 # Connect SSH IP Port=2222 (Using putty)
 # Switch to root

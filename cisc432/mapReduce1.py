@@ -23,7 +23,7 @@ class MoviesReviewsCount(MRJob):
                   ]
     #Mapping Function
     def mapper_get_ratings(self,_,line):
-         (userId, movieId rating, timestamp) = line.split(',')
+         (userId, movieId, rating, timestamp) = line.split(',')
         yield movieId,1
 	#
     def reducer_count_reviews(self, key,values):

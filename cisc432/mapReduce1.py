@@ -15,6 +15,8 @@
 from mrjob.job import MRJob 
 from mrjob.step import MRStep
 
+
+# The map-reduce function here count the number of reviews per each movie
 class MoviesReviewsCount(MRJob):
     def steps(self):
            return [ 
@@ -25,9 +27,9 @@ class MoviesReviewsCount(MRJob):
     def mapper_get_ratings(self,_,line):
          (userId, movieId, rating, timestamp) = line.split(',')
          yield movieId,1
-	#
+	#Reduce Function
     def reducer_count_reviews(self, key,values):
          yield key, sum(values)
 
-    if __name__ == '__main__':
-          MoviesReviewsCount.run()
+if __name__ == '__main__':
+    MoviesReviewsCount.run()

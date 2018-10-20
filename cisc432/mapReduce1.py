@@ -14,6 +14,8 @@
 #python mapReduce1.py -r hadoop --hadoop-streaming-jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar ./mapReduceData.dat
 from mrjob.job import MRJob 
 from mrjob.step import MRStep
+from datetime import datetime
+import sys
 
 
 # The map-reduce function here count the number of reviews per each movie

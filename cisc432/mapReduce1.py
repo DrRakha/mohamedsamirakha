@@ -38,4 +38,4 @@ if __name__ == '__main__':
     MoviesReviewsCount.run()
     end_time = datetime.now()
     elapsed_time = end_time - start_time
-    sys.stderr.write(elapsed_time)
+    sys.stderr.write(elapsed_time.seconds)

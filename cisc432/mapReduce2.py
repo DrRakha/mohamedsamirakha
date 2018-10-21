@@ -19,7 +19,7 @@ from datetime import datetime
 import sys
 
 # Multi-step jobs
-# The map-reduce function here count the number of reviews per each movie
+# The map-reduce function here count the number of reviews per each movie, output is sorted by number of reviews
 class MoviesReviewsCount(MRJob):
     def steps(self):
            return [ 
@@ -33,10 +33,10 @@ class MoviesReviewsCount(MRJob):
          yield movieId,1
 	#Reduce Function
     def reducer_count_reviews(self, key, values):
-         yield str(sum(values)).zfill(6), key
+         yield sum(values), key
     ##Output is a string in stdout.. padding zeros 	 
     def reducer_sortby_print(self, ratingSum,  key):
-        for movie in reversed(key):
+        for movie in (key):
           yield movie,ratingSum 
 
 if __name__ == '__main__':

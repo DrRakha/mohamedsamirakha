@@ -35,7 +35,7 @@ class MoviesReviewsCount(MRJob):
          yield key, sum(values)
     ##Output is a string in stdout.. padding zeros 	 
     def reducer_sortby_count(self, key, values):
-         yield  str(values).zfill(5), key
+         yield   values, key
 
 if __name__ == '__main__':
     sys.stderr.write("starting your first MapReduce job \n")

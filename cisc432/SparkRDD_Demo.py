@@ -4,17 +4,15 @@
 #data1: wget http://mohamedsamirakha.info/cisc432/mapReduceData.dat
 #Spark Demo: wget http://mohamedsamirakha.info/cisc432/SparkRDD_Demo.py
 #Run on hadoop
-
 #spark-submit ./SparkRDD_Demo.py
+
 from pyspark import SparkConf, SparkContext
  
-
-# Take each line of u.data and convert it to (movieID, (rating, 1.0))
-# This way we can then add up all the ratings for each movie, and
-# the total number of ratings for each movie (which lets us compute the average)
+# The spark map-reduce function here count the number of reviews per each movies
 def readInputFile(line):
     data = line.split(",")
-    return (int(data[1]), (float(data[2]), 1.0))
+	## First field key
+    return (int(data[1]), 1.0)
 
 if __name__ == "__main__":
     #  create   SparkContext
@@ -28,17 +26,14 @@ if __name__ == "__main__":
     # RDD  movieRatings : Convert to (movieID, (rating, 1.0))
     movieRatings = fileLines.map(readInputFile)
 
-    # RDD: Reduce to (movieID, (sumOfRatings, totalRatings))
-    sumOfCountsandRating = movieRatings.reduceByKey(lambda movie1, movie2: ( movie1[0] + movie2[0], movie1[1] + movie2[1] ) )
-
-    # RDD: Map to (rating, averageRating)
-    getAverageRating = sumOfCountsandRating.mapValues(lambda totalAndCount : totalAndCount[0] / totalAndCount[1])
+    # RDD: Reduce to (movieID, (sumOfRatings))
+    sumOfCountsandRating = movieRatings.reduceByKey(lambda movie1, movie2: ( movie1[0] + movie2[0]) )
 
     # RDD: Sort by average rating
-    sortedResults = getAverageRating.sortBy(lambda x: -x[1])
+    sortedResults = sumOfCountsandRating.sortBy(lambda x: -x[1])
 
     # Take the top 5 results
-    sortedResultsLimit10 = sortedResults.take(5)
+    sortedResultsLimit10 = sortedResults.take(20)
 
     # Print them out:
     for result in sortedResultsLimit10:

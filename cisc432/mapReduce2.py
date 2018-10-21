@@ -1,6 +1,7 @@
 # MapReduce Demo - Helloworld
 # Credits: M. S. Rakha, Ph.D., Queen\'s University, CISC/CMPE 432
 # HortonWorks SandBox with HDP 2.6.4
+# To know the number of cores on your VM. :nproc --all
 # Connect SSH IP Port=2222 (Using putty)
 # Switch to root : sudo -i
 #yum install nano [editor] optional
@@ -35,8 +36,8 @@ class MoviesReviewsCount(MRJob):
          yield str(sum(values)).zfill(6), key
     ##Output is a string in stdout.. padding zeros 	 
     def reducer_sortby_print(self, ratingSum,  key):
-        for movie in key
-                 yield movie,ratingSum 
+        for movie in key:
+          yield movie,ratingSum 
 
 if __name__ == '__main__':
     sys.stderr.write("starting your first MapReduce job \n")

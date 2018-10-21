@@ -8,10 +8,10 @@
 #pip install google-api-python-client==1.6.4
 #pip install mrjob==0.5.11
 #data1: wget http://mohamedsamirakha.info/cisc432/mapReduceData.dat
-#MapReduce1: wget http://mohamedsamirakha.info/cisc432/mapReduce1.py
+#MapReduce2: wget http://mohamedsamirakha.info/cisc432/mapReduce2.py
 #Run on hadoop
 #test if it is working locally: python mapReduce1.py ./mapReduceData.dat
-#python mapReduce1.py  --hadoop-streaming-jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -r hadoop hdfs:///user/maria_dev/inputMapReduce/mapReduceData.dat
+#python mapReduce2.py  --hadoop-streaming-jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -r hadoop hdfs:///user/maria_dev/inputMapReduce/mapReduceData.dat
 from mrjob.job import MRJob 
 from mrjob.step import MRStep
 from datetime import datetime
@@ -34,7 +34,7 @@ class MoviesReviewsCount(MRJob):
     def reducer_count_reviews(self, key, values):
          yield key, sum(values)
     ##Output is a string in stdout.. padding zeros 	 
-	def reducer_sortby_count(self, key, values):
+    def reducer_sortby_count(self, key, values):
          yield  str(values).zfill(5), key
 
 if __name__ == '__main__':

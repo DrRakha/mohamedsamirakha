@@ -35,10 +35,10 @@ if __name__ == "__main__":
     getAverageRating = sumOfCountsandRating.mapValues(lambda totalAndCount : totalAndCount[0] / totalAndCount[1])
 
     # RDD: Sort by average rating
-    sortedResults = getAverageRating.sortBy(lambda x: x[1])
+    sortedResults = getAverageRating.sortBy(lambda x: -x[1])
 
-    # Take the top 10 results
-    sortedResultsLimit10 = sortedResults.take(10)
+    # Take the top 5 results
+    sortedResultsLimit10 = sortedResults.take(5)
 
     # Print them out:
     for result in sortedResultsLimit10:

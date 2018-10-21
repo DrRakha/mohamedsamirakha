@@ -37,7 +37,7 @@ class MoviesReviewsCount(MRJob):
     ##Output is a string in stdout.. padding zeros 	 
     def reducer_sortby_print(self, ratingSum,  key):
         for movie in (key):
-          yield movie,ratingSum 
+          yield movie,int(ratingSum)
 
 if __name__ == '__main__':
     sys.stderr.write("starting your first MapReduce job \n")

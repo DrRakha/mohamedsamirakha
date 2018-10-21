@@ -1,3 +1,11 @@
+# Spark RDD Demo - Helloworld
+# Credits: M. S. Rakha, Ph.D., Queen\'s University, CISC/CMPE 432
+# HortonWorks SandBox with HDP 2.6.4
+#data1: wget http://mohamedsamirakha.info/cisc432/mapReduceData.dat
+#Spark Demo: wget http://mohamedsamirakha.info/cisc432/SparkRDD_Demo.py
+#Run on hadoop
+
+#spark-submit ./SparkRDD_Demo.py
 from pyspark import SparkConf, SparkContext
  
 

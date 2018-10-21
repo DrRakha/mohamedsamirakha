@@ -12,7 +12,7 @@ from pyspark import SparkConf, SparkContext
 def readInputFile(line):
     data = line.split(",")
 	## First field key
-    return (int(data[1]), 1.0)
+    return (int(data[1]), (1.0))
 
 if __name__ == "__main__":
     #  create   SparkContext
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     sortedResults = sumOfCountsandRating.sortBy(lambda x: -x[1])
 
     # Take the top 5 results
-    sortedResultsLimit10 = sortedResults.take(20)
+    sortedResultsLimit10 = sortedResults.take(10)
 
     # Print them out:
     for result in sortedResultsLimit10:

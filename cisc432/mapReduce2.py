@@ -36,7 +36,7 @@ class MoviesReviewsCount(MRJob):
          yield str(sum(values)).zfill(6), key
     ##Output is a string in stdout.. padding zeros 	 
     def reducer_sortby_print(self, ratingSum,  key):
-        for movie in key:
+        for movie in reversed(key):
           yield movie,ratingSum 
 
 if __name__ == '__main__':

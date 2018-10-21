@@ -27,7 +27,7 @@ if __name__ == "__main__":
     movieRatings = fileLines.map(readInputFile)
 
     # RDD: Reduce to (movieID, (sumOfRatings))
-    sumOfCountsandRating = movieRatings.reduceByKey(lambda movie1, movie2: ( movie1[0] + movie2[0]) )
+    sumOfCountsandRating = movieRatings.reduceByKey(lambda movie1, movie2: ( movie1[1] + movie2[1]) )
 
     # RDD: Sort by average rating
     sortedResults = sumOfCountsandRating.sortBy(lambda x: -x[1])

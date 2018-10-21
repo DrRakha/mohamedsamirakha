@@ -34,7 +34,7 @@ class MoviesReviewsCount(MRJob):
          yield key, sum(values)
 
 if __name__ == '__main__':
-    sys.stderr.write("starting your first MapReduce job ")
+    sys.stderr.write("starting your first MapReduce job \n")
     start_time = datetime.now()
     MoviesReviewsCount.run()
     end_time = datetime.now()

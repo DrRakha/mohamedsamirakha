@@ -23,7 +23,7 @@ class MoviesReviewsCount(MRJob):
     def steps(self):
            return [ 
                 MRStep(mapper=self.mapper_get_movies,	
-                     reducer=self.reducer_count_reviews),MRStep(reducer=self.reducer_sortby_count)
+                     reducer=self.reducer_count_reviews),MRStep(reducer=self.reducer_sortby_print)
 
                   ]
     #Mapping Function
@@ -32,10 +32,11 @@ class MoviesReviewsCount(MRJob):
          yield movieId,1
 	#Reduce Function
     def reducer_count_reviews(self, key, values):
-         yield key, sum(values)
+         yield str(sum(values)).zfill(6), key
     ##Output is a string in stdout.. padding zeros 	 
-    def reducer_sortby_count(self, key, values):
-         yield   values.zfill(6), key
+    def reducer_sortby_print(self, ratingSum,  key):
+        for movie in key
+                 yield movie,ratingSum 
 
 if __name__ == '__main__':
     sys.stderr.write("starting your first MapReduce job \n")

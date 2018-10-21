@@ -33,7 +33,7 @@ class MoviesReviewsCount(MRJob):
          yield movieId,rating
 	#Reduce Function
     def reducer_count_reviews(self, key, values):
-         yield  float(sum(values)/(float(len(values)))), key
+         yield  float(sum(values)), key
     ##Output is a string in stdout.. padding zeros 	 
     def reducer_sortby_print(self, ratingSum,  key):
         for movie in (key):

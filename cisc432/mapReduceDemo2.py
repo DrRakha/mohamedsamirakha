@@ -9,6 +9,7 @@
 #pip install google-api-python-client==1.6.4
 #pip install mrjob==0.5.11
 #data1: wget http://mohamedsamirakha.info/cisc432/mapReduceData.dat
+# Add the data to Hadoop HDFS
 #mapReduceDemo2.py: wget http://mohamedsamirakha.info/cisc432/mapReduceDemo2.py
 #Run on hadoop
 #test if it is working locally: python mapReduce1.py ./mapReduceData.dat

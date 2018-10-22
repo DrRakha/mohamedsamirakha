@@ -8,6 +8,7 @@
 #pip install google-api-python-client==1.6.4
 #pip install mrjob==0.5.11
 #data1: wget http://mohamedsamirakha.info/cisc432/mapReduceData.dat
+# Add your  data to Hadoop HDFS
 #MapReduce1: wget http://mohamedsamirakha.info/cisc432/mapReduceDemo1.py
 #Run on hadoop
 #test if it is working locally: python mapReduceDemo1.py ./mapReduceData.dat
@@ -18,7 +19,7 @@ from datetime import datetime
 import sys
 
 
-# The map-reduce function here count the number of reviews per each movie
+# "The map-reduce function here count the number of reviews per each movie"
 class MoviesReviewsCount(MRJob):
     def steps(self):
            return [ 

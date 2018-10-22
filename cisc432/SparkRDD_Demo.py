@@ -33,7 +33,7 @@ if __name__ == "__main__":
     # RDD: Sort by sum
     sortedResults = sumOfCountsandRating.sortBy(lambda x: -x[1])
 
-    # Take the top 5 results
+    # Take the top 10 results
     sortedResultsLimit10 = sortedResults.take(10)
 
     # Print them out:

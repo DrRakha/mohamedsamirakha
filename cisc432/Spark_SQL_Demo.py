@@ -1,0 +1,47 @@
+# Spark RDD Demo - Helloworld
+# Credits: M. S. Rakha, Ph.D., Queen\'s University, CISC/CMPE 432
+# HortonWorks SandBox with HDP 2.6.4
+#ambari-admin-password-reset [ in case you want to use ambari admin (username=admin, password=you need to add), instead of maria_dev
+#data1: wget http://mohamedsamirakha.info/cisc432/mapReduceData.dat
+#Spark Demo: wget http://mohamedsamirakha.info/cisc432/SparkSQL_Demo.py
+#Run on hadoop
+#spark-submit ./SparkSQL_Demo.py
+
+
+#This example count the total number of reviews per movie (item)
+
+from pyspark.sql import SparkSession
+from pyspark.sql import Row
+from pyspark.sql import functions
+ 
+
+def parseInput(line):
+    fields = line.split()
+    return Row(movieID = int(fields[1]), rating = float(fields[2]))
+
+def readInputFile(line):
+    data = line.split(",")
+	## First field key
+    return Row(itemId=int(data[1]))
+	
+	
+	
+if __name__ == "__main__":
+    #  create   SparkContext
+    spark = SparkSession.builder.appName("Cisc432Spark_SQL").getOrCreate()
+    # RDD fileLines: read data from HDFS, same as I did in Hadoop mapReduce Demo, you should add yours!
+    fileLines = sc.textFile("hdfs:///user/maria_dev/inputMapReduce/mapReduceData.dat")
+    # RDD  movieRatings : Convert to (itemId) rows
+    movieRatings = fileLines.map(readInputFile)
+     # convert moveRatings RDD to a dataFrame
+    moviesDataFrame = spark.createDataFrame(movieRatings)
+	 # Count the number of reviews, which also equal to the number of movie rows, add it to a new DataFrame called reviewCounts
+    reviewCounts = moviesDataFrame.groupBy("itemId").count()
+     # Pull the top 10 results
+    limitMovies = reviewCounts.orderBy("count()").take(10)
+    # Print them out, converting movie ID's to names as we go.
+    for movie in limitMovies:
+        print (movie[1], movie[2])
+
+    # Stop the session
+    spark.stop()

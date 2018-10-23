@@ -28,7 +28,7 @@ def readInputFile(line):
 	
 if __name__ == "__main__":
     #  create   SparkContext
-    spark = SparkSession.builder.appName("Cisc432Spark_SQL").getOrCreate()
+    sc = SparkSession.builder.appName("Cisc432Spark_SQL").getOrCreate()
     # RDD fileLines: read data from HDFS, same as I did in Hadoop mapReduce Demo, you should add yours!
     fileLines = sc.textFile("hdfs:///user/maria_dev/inputMapReduce/mapReduceData.dat")
     # RDD  movieRatings : Convert to (itemId) rows

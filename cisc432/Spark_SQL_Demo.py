@@ -3,9 +3,9 @@
 # HortonWorks SandBox with HDP 2.6.4
 #ambari-admin-password-reset [ in case you want to use ambari admin (username=admin, password=you need to add), instead of maria_dev
 #data1: wget http://mohamedsamirakha.info/cisc432/mapReduceData.dat
-#Spark Demo: wget http://mohamedsamirakha.info/cisc432/SparkSQL_Demo.py
+#Spark Demo: wget http://mohamedsamirakha.info/cisc432/Spark_SQL_Demo.py
 #Run on hadoop
-#spark-submit ./SparkSQL_Demo.py
+#spark-submit ./Spark_SQL_Demo.py
 
 
 #This example count the total number of reviews per movie (item)
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     # RDD  movieRatings : Convert to (itemId) rows
     movieRatings = fileLines.map(readInputFile)
      # convert moveRatings RDD to a dataFrame
-    moviesDataFrame = spark.createDataFrame(movieRatings)
+    moviesDataFrame = sc.createDataFrame(movieRatings)
 	 # Count the number of reviews, which also equal to the number of movie rows, add it to a new DataFrame called reviewCounts
     reviewCounts = moviesDataFrame.groupBy("itemId").count()
      # Pull the top 10 results
@@ -44,4 +44,4 @@ if __name__ == "__main__":
         print (movie[1], movie[2])
 
     # Stop the session
-    spark.stop()
+    sc.stop()

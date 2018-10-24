@@ -14,10 +14,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql import Row
 from pyspark.sql import functions
  
-
-def parseInput(line):
-    fields = line.split()
-    return Row(movieID = int(fields[1]), rating = float(fields[2]))
+ 
 
 def readInputFile(line):
     data = line.split(",")

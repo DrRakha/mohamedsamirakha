@@ -34,8 +34,11 @@ if __name__ == "__main__":
     moviesDataFrame = sc.createDataFrame(movieRatings)
 	 # Count the number of reviews, which also equal to the number of movie rows, add it to a new DataFrame called reviewCounts
     reviewCounts = moviesDataFrame.groupBy("itemId").count()
-     # Pull the top 10  results
-    for movie in reviewCounts.take(10)
+     # Pull the top 10  results 
+	 
+    limitReviews = reviewCounts.take(10)
+	
+    for movie in limitReviews
         print (movie[1], movie[2])
 	 
 	    # Pull the top 5  results

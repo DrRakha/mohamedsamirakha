@@ -39,13 +39,13 @@ if __name__ == "__main__":
     limitReviews = reviewCounts.take(10)
 	
     for movie in limitReviews:
-        print (movie[1], movie[2])
+        print (movie[0], movie[1])
 	 
 	    # Pull the top 5  results
     limitMovies = reviewCounts.orderBy("count").take(10)
     # Print them out, converting movie ID's to names as we go.
     for movie in limitMovies:
-        print (movie[1], movie[2])
+        print (movie[0], movie[1])
 
     # Stop the session
     sc.stop()

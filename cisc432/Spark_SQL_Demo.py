@@ -38,7 +38,7 @@ if __name__ == "__main__":
 	 
     limitReviews = reviewCounts.take(10)
 	
-    for movie in limitReviews
+    for movie in limitReviews:
         print (movie[1], movie[2])
 	 
 	    # Pull the top 5  results

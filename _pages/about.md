@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Dr.Mohamed Sami Rakha, Kingston, Canada"
+title: "Dr.Mohamed Sami Rakha, Kingston,ON, Canada"
 excerpt: "About me"
 author_profile: true
 redirect_from: 

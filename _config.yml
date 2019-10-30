@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Mohamed Sami Rakha"
 title_separator          : "-"
 name                     : &name "Mohamed Sami Rakha"
-description              : &description "Ph.D. Candidate at Queens"
+description              : &description "Dr. Rakha"
 url                      : "https://mohamedsamirakha.info"   
 baseurl                  : ""  
 repository               : "codemiles/mohamedsamirakha"
@@ -78,9 +78,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Ph.D.  Candidate Mohamed Sami Rakha"
+  name             : "Dr. Mohamed Sami Rakha"
   avatar           : "rakhainfo.png"
-  bio              : "Areas of Interest: Software Development, Machine Learning, Data Mining and Analysis"
+  bio              : "Areas of Interest: Software Engineering, Artificial Intelligence, Data Science and Cyber-security"
   location         : "Canada, Ontario"
   employer         :
   googlescholar    : "https://scholar.google.ca/citations?user=YrEOxbIAAAAJ&hl=en"
